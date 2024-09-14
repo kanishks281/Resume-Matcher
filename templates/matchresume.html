@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #343a40; /* Dark background color for the page */
+            color: #f8f9fa; /* Light text color for readability */
         }
         .container {
             margin-top: 50px;
@@ -15,10 +16,11 @@
         .card {
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            background-color: #495057; /* Darker background color for the card */
         }
         .card-header {
-            background-color: #007bff;
+            background-color: #007bff; /* Blue background color for the header */
             color: white;
             border-radius: 10px 10px 0 0;
             padding: 10px 20px;
@@ -29,10 +31,25 @@
         .form-group {
             margin-bottom: 1.5rem;
         }
+        .form-control {
+            background-color: #6c757d; /* Dark background color for input fields */
+            border: 1px solid #495057; /* Border color matching the card background */
+            color: #f8f9fa; /* Light text color for input fields */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for input fields */
+        }
+        .btn-primary {
+            background-color: #28a745; /* Green button color */
+            border-color: #28a745;
+        }
+        .btn-primary:hover {
+            background-color: #218838; /* Darker green on hover */
+            border-color: #1e7e34;
+        }
         .alert-info {
-            background-color: #d1ecf1; /* Light blue background for info alert */
-            border-color: #bee5eb; /* Border color for info alert */
-            color: #0c5460; /* Text color for info alert */
+            background-color: #007bff; /* Blue background for alerts */
+            border-color: #0056b3;
+            color: #f8f9fa;
         }
     </style>
 </head>
@@ -50,7 +67,7 @@
                     </div>
                     <div class="form-group">
                         <label for="resumes">Upload Resumes:</label>
-                        <p>Please upload resume(You can upload multiple also).</p>
+                        <p>Please upload more than 5 resumes.</p>
                         <input type="file" class="form-control" id="resumes" name="resumes" multiple required accept=".pdf, .docx, .txt">
                     </div>
                     <button type="submit" class="btn btn-primary">Match Resumes</button>
